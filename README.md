@@ -1,5 +1,6 @@
 # MotherTips
 Mothers jokes in Portuguese
+if you want to help me improve my code and help me to know more about this area, feel free to contact me 
 
 very basic python code, one of my first projects, don't judge me :)
 -----------------------------------------------------------------------------------------
