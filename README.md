@@ -1,7 +1,7 @@
 # MotherTips
 Mothers jokes in Portuguese
 
-
+very basic python code, one of my first projects, don't judge me :)
 -----------------------------------------------------------------------------------------
 Basta usares -roast e ja vês 
             
