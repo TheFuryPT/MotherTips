@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-token = "NzI3NTQ1NTIzMTAzNDY1NTcz.XvtdXg.ewR1TrbrpxIKplWQTAIRKCFNU-M"
+token = "YOUR_BOT_TOKEN"
 
 #------------------------------------------------------------------------------------------------------------------------------
 
@@ -41,10 +41,9 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    user_fury = "Fury^^#3694"
     await member.create_dm()
     await member.dm_channel.send(
-        f'Hi {member.name}, welcome to my Discord server :slight_smile: //{user_fury.mention}'
+        f'Hi {member.name}, welcome to my Discord server :slight_smile:  //Fury^^'
     )
 
 #------------------------------------------------------------------------------------------------------------------------------
