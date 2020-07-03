@@ -67,7 +67,7 @@ async def on_message(message):
             f"**{user.mention} A tua mae e como o pingo doce: sabe bem pagar tao pouco!**", f"**{user.mention} A tua mae e como a europoupança do mcdonalds: tudo a 1 euro!**",
             f"**{user.mention} A tua mae e como a caixa registadora,abre-se por uns trocos!**", f"**{user.mention} So comes caldo verde quando a tua mae faz a depilaçao!**",
             f"**{user.mention} A tua mae e como os macacos anda de pau em pau!**", f"**{user.mention} A tua mae e como um trator: Grande e Gorda**",
-            f"**{user.mention} A minha piça e tipo arco iris pk a tua mae muda de baton todos os dias**", f"**{user.mention} A tua mãe é como o bebe so quer e leitinho!!**",
+            f"**{user.mention} A minha piça e tipo arco iris pq a tua mae muda de baton todos os dias**", f"**{user.mention} A tua mãe é como o bebe so quer e leitinho!!**",
             f"**{user.mention} A tua mãe é tao gorda q tirei lhe uma foto no natal e ainda ta a imprimir!!**", f"**{user.mention} A tua mae é como o caldo verde, todos querem por la o xouriço**",
             f"**{user.mention} A tua mãe é como o super Mário, salte sempre pela moedinha.**", f"**{user.mention} A tua mãe é como o corrimão, toda a gente lhe põe a mão.**",
             f"**{user.mention} A tua mãe é como o castor, anda sempre com o pau na boca.**", f"**{user.mention} A tua mãe é como o Cachorro Quente, tem sempre uma salsicha lá dentro.**",
@@ -142,6 +142,5 @@ mete o nome do teu amigo, assim : <-roast -MotherTips>
 ------------------------------------------------------------------------```''')
 
 #------------------------------------------------------------------------------------------------------------------------------
-
 
 client.run(token)
