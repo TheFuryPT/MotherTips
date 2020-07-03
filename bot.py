@@ -145,4 +145,3 @@ mete o nome do teu amigo, assim : <-roast -MotherTips>
 
 
 client.run(token)
-f.close()
