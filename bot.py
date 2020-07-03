@@ -1,11 +1,12 @@
 import os
 import random
 import discord
-#from dotenv import load_dotenv
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-token = "NzI3NTQ1NTIzMTAzNDY1NTcz.Xv1MYA.Kzeov1xvZLx3m3rndKA0YiuRxyE"
+token_txt = open('token.txt', 'r')
+token = token_txt.read()
+
 
 #------------------------------------------------------------------------------------------------------------------------------
 
@@ -25,16 +26,14 @@ dicas = [
 
 #------------------------------------------------------------------------------------------------------------------------------
 
-#load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-
 client = discord.Client()
 
 #------------------------------------------------------------------------------------------------------------------------------
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.dnd, activity=discord.Game("with all of you!!"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("with all of you!!"))
     print(f'{client.user.name} has connected to Discord!')
 
 #------------------------------------------------------------------------------------------------------------------------------
@@ -92,18 +91,18 @@ async def on_message(message):
 #------------------------------------------------------------------------------------------------------------------------------    
     for i in range(0,200):       
         user = random.choice(message.channel.guild.members)
-#------------------------------------------------------------------------------------------------------------------------------
+
         if message.content == "-roast -MotherTips":
             await message.channel.purge(limit=1)
             await message.channel.send("Comigo essa cena nao vai funcionar :man_facepalming:")
             break
-#------------------------------------------------------------------------------------------------------------------------------
+
         if message.content == "-roast Fury^^":
             user = ["Fury^^#3694"]
             await message.channel.purge(limit=1)
             await message.channel.send(f"Vai po caralhinho sim :slight_smile:, ele é o meu boss nao posso fazer isso :eyes: ")
             break
-#------------------------------------------------------------------------------------------------------------------------------
+
         if message.content == "-roast {}".format(user.name):
             print("Entrei no loop e detectei o nome {}".format(user.name))
             dicas_random = [
@@ -130,7 +129,6 @@ async def on_message(message):
     if message.content.lower() == '-help':
         print("Alguem pediu ajuda")
         await message.channel.purge(limit=1)
-#------------------------------------------------------------------------------------------------------------------------------
         await message.channel.send('''```Basta usares -roast e ja vês 
             \nE exprimenta tambem o -roast random   
             \nE a melhor parte é que podes dar uma dica para o teu amigo,
@@ -147,3 +145,4 @@ mete o nome do teu amigo, assim : <-roast -MotherTips>
 
 
 client.run(token)
+f.close()
